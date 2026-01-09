@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - TinTin The Barber</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/e4b7bd62c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+    <!--HEADER-->
+    <section class="header">
+        <div class="header-container">
+            <nav>
+                <a href="index.html"><img src="images/tintin_logo.png" alt="tintin-logo"></a>
+                <i class="fa-solid fa-bars" onclick="hideMenu()"></i>
+                <div class="right-links" id="right-linkss"> <!--for RIGHT-SIDE LINKS-->
+                    <i class="fa-solid fa-xmark " onclick="showMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    
+    <!--MAIN-->
+    <section class="main-contentSERVICES">
+        <div class="content-textSERVICE">
+            <div class="Our-Staff">
+                <div class="staff-Info">
+                    <h2 class="section-title">OUR STAFF</h2>
+                    <h3>Angelo Valdez</h3>
+                    <p>Angelo Valdez, the owner and barber of TinTin the Barber,
+                    gained his experience while working at the famous Supremo
+                    barbershop. Once he had saved enough funds, he decided to open
+                    his own barbershop in Maysan, Valenzuela City. Known for his discipline
+                    and attention to detail, Angelo consistently delivers polished haircuts
+                    to his customers. His dedication has made TinTin the Barber a beloved spot
+                    among local patrons.</p>
+                </div>
+                <div class="imgRec">
+                    <img src="images/kuya Tin.jpg" alt="kuya-tin">
+                </div>
+            </div>
+            <div class="sched-ule">
+                <h2 class="section-title">SCHEDULE</h2>
+                <p>The barbershop opens daily between 8AM-9AM and accepts customers until midnight.
+                    To book an appointment, contact the barbershop directly. For home services, please
+                    reach out to the owner for scheduling and pricing details. BOOK NOW to secure your
+                    spot for a quality haircut.</p>
+                    <button type="submit" class="btn" onclick="openForm()">BOOK NOW</button>
+                    <div class="modal-overlay" id="modal-overlay" onclick="clickOutside()"></div>
+                    <div class="popup-container" id="popup-container">
+                        <img src="images/close.png" alt="" onclick="closeForm()">
+                        <form id="booking-form">
+                            <h2>Enter your details</h2>
+                            <div class="popup-content">
+                                <div class="input-box">
+                                    <label for="fname">First Name</label>
+                                    <input type="text" placeholder="Enter first name" name="fname" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" placeholder="Enter last name" name="lname" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="number">Contact #</label>
+                                    <input type="tel" placeholder="Format: 0900000000" name="number" required pattern="[0-9]{4}[0-9]{3}[0-9]{4}">
+                                </div>
+                                <div class="input-box">
+                                    <label for="email">Email</label>
+                                    <input type="email" placeholder="Enter email" name="email" required>
+                                </div>
+                                <div class="alert">
+                                    <p>By clicking Submit, you agree to our <a href="#">Terms</a> and
+                                    <a href="#">Privacy Policy</a>. You may receive SMS notifications from us</p>
+                                </div>
+                                <div class="button-container">
+                                    <button type="button" onclick="validateForm()">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="p-up" id="p-up">
+                        <h2>Success!</h2>
+                        <p>Your details have been submitted.
+                        Please wait for our confirmation of your appointment.
+                        </p>
+                        <button type="button" onclick="closeSuccess()">Confirm</button>
+                    </div>
+            </div>
+        </div>
+        <div class="service-content">
+            <h2 class="section-titleSER">SERVICES</h2>
+            <p>The barbershop provides several services such as haircut that can
+            be just general haircuts or customized according to customer's preferences.
+            They also provide shaving service where customers can get their beard or
+            mustach trimmed or stylized. Lastly, the barbershop offers a home service 
+            where the barber personally visits their customers at their assigned location
+            to provide them either of the services that were mentioned.</p>
+        </div>
+        <div class="content-textSERVICE2">
+            <div class="service">
+                <img src="images/Services/Haircut.jpg" alt="">
+                <div class="layer">
+                    <h3 class="sname">Haircut</h3>
+                    <p class="scontent">Experience the precision and artistry of our professional haircutting
+                    services at TinTin the Barber. We are dedicated to delivering the perfect
+                    cut, tailored to your unique style and preferences. Whether you’re
+                    looking for a classic trim, a trendy new look, or a sophisticated fade, we use
+                    the finest techniques and tools to ensure every detail is flawless.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/Services/Shaving.jpg" alt="">
+                <div class="layer">
+                    <h3 class="sname">Shave</h3>
+                    <p class="scontent">Indulge in the luxurious experience of our professional shaving services
+                    at TinTin the Barber. We offer a close and comfortable shave, 
+                    using top-quality products to ensure your skin feels smooth and refreshed. 
+                    Whether you prefer a clean shave or a precisely groomed beard, we cater to your 
+                    specific needs with precision and care.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/Services/Home service.jpg" alt="">
+                <div class="layer">
+                    <h3 class="sname">Home Service</h3>
+                    <p class="scontent">Enjoy the convenience and comfort of our professional barbering services 
+                    right in your own home with TinTin the Barber's home service. Our skilled 
+                    barbers bring all the necessary tools and expertise to deliver high-quality 
+                    haircuts, shaves, and grooming services at your doorstep. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-maysan">
+                    <h4>Maysan</h4>
+                    <h4 class="footer-mever">Ever</h4>
+                </div>
+                <div class="footer-info">
+                    <h5>Maysan, Valenzuela</h5>
+                    <h5>0943-943-8590 </h5>
+                    <h5>Open everyday @ 9AM - 9PM</h5>
+                </div>
+            </div>
+            <div class="map">
+                <p>WANT A <strong>SHARP CUT?</strong> VISIT US<span> AND GET YOURS</span> </p>
+                <div class="map-Img">
+                    <iframe width="300" height="100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" 
+                    src="https://maps.google.com/maps?width=523&amp;height=403&amp;hl=en&amp;q=Maysan,%20Valenzuela%20Ilford+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    </iframe><a href='https://google-map-generator.com/'></a>
+                </div>
+                <a href="privacypolicy.html">Privacy Policy</a> | <a href="terms.html">Terms and Condition</a> 
+            </div>
+        </div>
+    </section>
+
+    <!--SUB-FOOTER-->
+    <section class="sub-footer">
+        <div class="subfooter-container">
+            <div class="sub-footer-info">
+                <h5>Copyright © 2024 TinTin The Barber | WEB DEVELOPMENT BY CARILLO, GENOGUIN, SACDALAN</h5>
+            </div>
+        </div>
+    </section>
+
+    <!--POPUP SCRIPT-->
+    <script>
+        let bookNow = document.getElementById("popup-container");
+        let overlay = document.getElementById("modal-overlay");
+        let success = document.getElementById("p-up");
+        let form = document.getElementById("booking-form");
+
+        var navLinks = document.getElementById("right-linkss");
+
+        function showMenu(){
+            navLinks.style.right = "-200px";
+        }
+        function hideMenu(){
+            navLinks.style.right = "0";
+        }
+            
+        function openForm() {
+            bookNow.classList.add("open-popup");
+            overlay.classList.add("open-overlay");
+        }
+        
+        function closeForm() {
+            bookNow.classList.remove("open-popup");
+            overlay.classList.remove("open-overlay");
+        }
+        
+        function clickOutside() {
+            overlay.addEventListener('click', closeForm);
+        }
+        
+        function validateForm() {
+            let isValid = form.checkValidity();
+            if (isValid) {
+                openSuccess();
+            } else {
+                form.reportValidity(); // This will display the browser's built-in validation messages
+            }
+        }
+        
+        function openSuccess() {
+            success.classList.add("open-p-up");
+            overlay.classList.add("open-overlay"); // Show the overlay for success message
+            bookNow.classList.remove("open-popup");
+        }
+        
+        function closeSuccess() {
+            success.classList.remove("open-p-up");
+            overlay.classList.remove("open-overlay");
+        }
+        
+        document.getElementById("modal-overlay").addEventListener('click', () => {
+            closeForm();
+            closeSuccess();
+        });
+
+    </script>
+</body>
+</html>

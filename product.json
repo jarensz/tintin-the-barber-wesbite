@@ -1,0 +1,44 @@
+[
+    {
+        "prdID":1,
+        "prdName": "Hair Scissor",
+        "prdPrice": 190.00,
+        "prdDesc": "Lightweight and practical, this tool is convenient to carry. The specially designed small elbow makes trimming easier, making it perfect for both salon and home use.",
+        "prdImage": "images/1.png"
+    },
+    {
+        "prdID":2,
+        "prdName": "Thinning Scissor",
+        "prdPrice": 190.00,
+        "prdDesc": "This thinning scissor is made of stainless steel with vacuum titanium plating, making it bright, corrosion-resistant, and non-fading. It has a sharp cutter head to prevent jamming or pinching.",
+        "prdImage": "images/2.png"
+    },
+    {
+        "prdID":3,
+        "prdName": "Electric Hair Clipper",
+        "prdPrice": 179.00,
+        "prdDesc": "The USB Rechargeable Electric Hair Clipper is a cordless, 1mm trimmer for men, perfect for barbershops. It offers strong power, low noise, sharp and durable blades.",
+        "prdImage": "images/3.png"
+    },
+    {
+        "prdID":4,
+        "prdName": "Pomade",
+        "prdPrice": 190.00,
+        "prdDesc": "Bench Barbers Pomade helps you look stylish and polished with its classic formula. You can create a sleek look with a textured quiff or a modern pompadour using this essential hair styling product.",
+        "prdImage": "images/4.png"
+    },
+    {
+        "prdID":5,
+        "prdName": "Water Based Pomade",
+        "prdPrice": 80.00,
+        "prdDesc": "This lightweight, water-based pomade provides a strong hold in a convenient travel size. It delivers a matte textured finish, perfect for achieving a natural look with firm control.",
+        "prdImage": "images/5.png"
+    },
+    {
+        "prdID":6,
+        "prdName": "Clay Pomade",
+        "prdPrice": 80.00,
+        "prdDesc": "This pomade offers a low shine and heavy hold, featuring a clay type formula in a convenient travel size. It provides a matte textured finish, perfect for achieving a natural look with strong control.",
+        "prdImage": "images/6.png"
+    }
+]

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - TinTin The Barber</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/e4b7bd62c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+<!--HEADER-->
+<section class="header">
+    <div class="header-container">
+        <nav>
+            <a href="index.html"><img src="images/tintin_logo.png" alt="tintin-logo"></a>
+            <i class="fa-solid fa-bars" onclick="hideMenu()"></i>
+            <div class="right-links" id="right-linkss"> <!--for RIGHT-SIDE LINKS-->
+                <i class="fa-solid fa-xmark " onclick="showMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<!--BLOG MAIN CONTENT-->
+<section class="blog-main">
+    <div class="blog-container">
+        <div class="day-content">
+            <div>
+                <h1>A DAY IN A LIFE IN A BARBERSHOP</h1>
+                <p class="blog-paragraph-1"> Kuya Tin's day as a barber starts at 7 a.m. He wakes up to get ready for breakfast before heading to his shop. 
+                His open hours are 9:30 a.m. to 9 p.m. After having breakfast at home, he rides his bike to his shop. 
+                Sometimes, when he's running late, he takes his breakfast at the shop because there are many food stores nearby.</p>
+                <p class="blog-paragraph-2"> Once he opens the shop, he starts by preparing his tools and cleaning the shop before customers arrive. 
+                He sweeps the hair from the floor and cleans his haircut tools. After that, he turns on the air conditioning 
+                to refresh the inside of the store. Once all the preparations are done, he checks for messages from customers 
+                wanting to reserve a spot and notes them down so he knows who to prioritize when they arrive.</p>
+            </div>
+            <div class="vid">
+                <video preload="none" controls loop src="images/finalsample.mp4" width="534" height="252"></video>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--FOOTER-->
+<section class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-maysan">
+                <h4>Maysan</h4>
+                <h4 class="footer-mever">Ever</h4>
+            </div>
+            <div class="footer-info">
+                <h5>Maysan, Valenzuela</h5>
+                <h5>0943-943-8590 </h5>
+                <h5>Open everyday @ 9AM - 9PM</h5>
+            </div>
+        </div>
+        <div class="map">
+            <p>WANT A <strong>SHARP CUT?</strong> VISIT US<span> AND GET YOURS</span> </p>
+            <div class="map-Img">
+                <iframe width="300" height="100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" 
+                src="https://maps.google.com/maps?width=523&amp;height=403&amp;hl=en&amp;q=Maysan,%20Valenzuela%20Ilford+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe><a href='https://google-map-generator.com/'></a>
+            </div>
+            <a href="privacypolicy.html">Privacy Policy</a> | <a href="terms.html">Terms and Condition</a> 
+        </div>
+    </div>
+</section>
+
+<!--SUB-FOOTER-->
+<section class="sub-footer">
+    <div class="subfooter-container">
+        <div class="sub-footer-info">
+            <h5>Copyright © 2024 TinTin The Barber | WEB DEVELOPMENT BY CARILLO, GENOGUIN, SACDALAN</h5>
+        </div>
+    </div>
+</section>
+
+<script>
+    var navLinks = document.getElementById("right-linkss");
+
+    function showMenu(){
+        navLinks.style.right = "-200px";
+    }
+    function hideMenu(){
+        navLinks.style.right = "0";
+    }
+</script>
+</body>
+</html>

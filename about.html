@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - TinTin The Barber</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/e4b7bd62c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--HEADER-->
+    <section class="header">
+        <div class="header-container">
+            <nav>
+                <a href="index.html"><img src="images/tintin_logo.png" alt="tintin-logo"></a>
+                <i class="fa-solid fa-bars" onclick="hideMenu()"></i>
+                <div class="right-links" id="right-linkss"> <!--for RIGHT-SIDE LINKS-->
+                    <i class="fa-solid fa-xmark " onclick="showMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!--MAIN-->
+    <section class="main-contentABOUT">
+        <div class="content-textABOUT">
+            <div class="cnt">
+                <h2 class="section-title">MISSION</h2>
+                <p>Our mission is to provide haircuts that boost confidence for everyone.
+                We aim to create an environment where customers feel comfortable suggesting 
+                any hairstyle they prefer without any pressure. We strive to deliver these 
+                services efficiently and promptly, ensuring every customer leaves satisfied 
+                and confident. By focusing on personalized care and flawless service, we hope 
+                to make each visit a positive and empowering experience.
+                </p>
+            </div>
+            <div class="abt-img">
+                <img src="images/website imgs/Intorduction.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="content-textABT2">
+            <div class="abt-img">
+                <img src="images/website imgs/Our story.jpg" alt="">
+            </div>
+            <div class="cnt2">
+                <h2 class="section-titleTWO ">VISION</h2>
+                <p>TinTin Barbershop exists to provide satisfactory to the clients. Creating
+                a welcoming environment where clients can be comfortable as we exceed their 
+                expectations through high-quality haircuts or services. Our commitment to 
+                excellence ensures that every clients leaves the shop with their best looking 
+                and feeling, building a long-term relationship as the business consider its value.
+                </p>
+            </div>
+        </div>
+    </section>
+ 
+    <!--FOOTER-->
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-maysan">
+                    <h4>Maysan</h4>
+                    <h4 class="footer-mever">Ever</h4>
+                </div>
+                <div class="footer-info">
+                    <h5>Maysan, Valenzuela</h5>
+                    <h5>0943-943-8590 </h5>
+                    <h5>Open everyday @ 9AM - 9PM</h5>
+                </div>
+            </div>
+            <div class="map">
+                <p>WANT A <strong>SHARP CUT?</strong> VISIT US<span> AND GET YOURS</span> </p>
+                <div class="map-Img">
+                    <iframe width="300" height="100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" 
+                    src="https://maps.google.com/maps?width=523&amp;height=403&amp;hl=en&amp;q=Maysan,%20Valenzuela%20Ilford+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    </iframe><a href='https://google-map-generator.com/'></a>
+                </div>
+                <a href="privacypolicy.html">Privacy Policy</a> | <a href="terms.html">Terms and Condition</a> 
+            </div>
+        </div>
+    </section>
+
+    <!--SUB-FOOTER-->
+    <section class="sub-footer">
+        <div class="subfooter-container">
+            <div class="sub-footer-info">
+                <h5>Copyright © 2024 TinTin The Barber | WEB DEVELOPMENT BY CARILLO, GENOGUIN, SACDALAN</h5>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("right-linkss");
+
+        function showMenu(){
+            navLinks.style.right = "-200px";
+        }
+        function hideMenu(){
+            navLinks.style.right = "0";
+        }
+    </script>
+</body>
+</html>

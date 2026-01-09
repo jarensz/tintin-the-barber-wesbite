@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - TinTin The Barber</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/e4b7bd62c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+    <!--HEADER-->
+    <section class="header">
+        <div class="header-container">
+            <nav>
+                <a href="index.html"><img src="images/tintin_logo.png" alt="tintin-logo"></a>
+                <i class="fa-solid fa-bars" onclick="hideMenu()"></i>
+                <div class="right-links" id="right-linkss"> <!--for RIGHT-SIDE LINKS-->
+                    <i class="fa-solid fa-xmark " onclick="showMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!--CHECKOUT-->
+    <section class="checkout">
+        <div class="checkout-container">
+            <div class="checkout-layout">
+                <div class="return-cart">
+                    <a href="products.html">GO BACK</a>
+                    <h1>On Cart</h1>
+                    <div class="oncart-list">
+                        <div class="items">
+                            <img src="images/1.png" alt="">
+                            <div class="item-info">
+                                <div class="item-name">Hair Scissor</div>
+                                <div class="item-price">₱190.00</div>
+                            </div>
+                            <div class="item-quantity">1</div>
+                            <div class="price">₱190.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <h1>CHECKOUT</h1>
+                    <div class="checkout-form">
+                        <div class="group">
+                            <label for="">Full Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="group">
+                            <label for="">Phone Number</label>
+                            <input type="text">
+                        </div>
+                        <div class="group">
+                            <label for="">Address</label>
+                            <input type="text">
+                        </div>
+                        <div class="group">
+                            <label for="">Payment Method</label>
+                            <select name="" id="">
+                                <option value="">Choose...</option>
+                                <option value="">GCash</option>
+                            </select>
+                        </div>
+                        <div class="group">
+                            <label for="">Delivery/Pick-Up Method</label>
+                            <select name="" id="">
+                                <option value="">Choose...</option>
+                                <option value="">On-Site Pick-Up</option>
+                                <option value="">Lalamove</option>
+                                <option value="">Grab Express</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="return">
+                        <div class="return-row">
+                            <div>Total Quantity</div>
+                            <div class="total-quantity">1</div>
+                        </div>
+                        <div class="return-row">
+                            <div>Total Price</div>
+                            <div class="total-price">₱190.00</div>
+                        </div>
+                    </div>
+                    <button type="submit"class="btn-checkout">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--FOOTER-->
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-maysan">
+                    <h4>Maysan</h4>
+                    <h4 class="footer-mever">Ever</h4>
+                </div>
+                <div class="footer-info">
+                    <h5>Maysan, Valenzuela</h5>
+                    <h5>0943-943-8590 </h5>
+                    <h5>Open everyday @ 9AM - 9PM</h5>
+                </div>
+            </div>
+            <div class="map">
+                <p>WANT A <strong>SHARP CUT?</strong> VISIT US<span> AND GET YOURS</span> </p>
+                <div class="map-Img">
+                    <iframe width="300" height="100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" 
+                    src="https://maps.google.com/maps?width=523&amp;height=403&amp;hl=en&amp;q=Maysan,%20Valenzuela%20Ilford+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    </iframe><a href='https://google-map-generator.com/'></a>
+                </div>
+                <a href="privacypolicy.html">Privacy Policy</a> | <a href="terms.html">Terms and Condition</a> 
+            </div>
+        </div>
+    </section>
+    
+    <!--SUB-FOOTER-->
+    <section class="sub-footer">
+        <div class="subfooter-container">
+            <div class="sub-footer-info">
+                <h5>Copyright © 2024 TinTin The Barber | WEB DEVELOPMENT BY CARILLO, GENOGUIN, SACDALAN</h5>
+            </div>
+        </div>
+    </section>
+
+<script>
+        var navLinks = document.getElementById("right-linkss");
+
+        function showMenu(){
+            navLinks.style.right = "-200px";
+        }
+        function hideMenu(){
+            navLinks.style.right = "0";
+        }
+
+    let listCart = [];
+
+    function checkCart() {
+        var cookieValue = document.cookie
+            .split('; ')
+            .find(row => row.startsWith('listCart='));
+        if (cookieValue) {
+            listCart = JSON.parse(cookieValue.split('=')[1]);
+        }
+    }
+
+    checkCart();
+    addCartToHTML();
+
+    function addCartToHTML() {
+        let listCartHTML = document.querySelector('.return-cart .oncart-list'); 
+        listCartHTML.innerHTML = '';
+        let totalQuantityHTML = document.querySelector('.total-quantity'); 
+        let totalPriceHTML = document.querySelector('.total-price');
+
+        let totalQuantity = 0;
+        let totalPrice = 0;
+
+        if (listCart) {
+            listCart.forEach((product, index) => {
+                if (product && product.quantity > 0) {
+                    let newP = document.createElement('div');
+                    newP.classList.add('items');
+                    newP.innerHTML =
+                        `<img src="${product.prdImage}" alt="">
+                        <div class="item-info">
+                            <div class="item-name">${product.prdName}</div>
+                            <div class="item-price">₱${product.prdPrice.toFixed(2)}</div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="decrement" data-index="${index}">-</button>
+                            <span>${product.quantity}</span>
+                            <button class="increment" data-index="${index}">+</button>
+                        </div>
+                        <div class="price">₱${(product.prdPrice * product.quantity).toFixed(2)}</div>`;
+                    listCartHTML.appendChild(newP);
+                    totalQuantity += product.quantity;
+                    totalPrice += (product.prdPrice * product.quantity);
+                }
+            });
+        }
+
+        totalQuantityHTML.innerText = totalQuantity;
+        totalPriceHTML.innerText = '₱' + totalPrice.toFixed(2);
+
+        // Attach event listeners to the buttons
+        document.querySelectorAll('.decrement').forEach(button => {
+            button.addEventListener('click', decrementQuantity);
+        });
+
+        document.querySelectorAll('.increment').forEach(button => {
+            button.addEventListener('click', incrementQuantity);
+        });
+    }
+
+    function decrementQuantity(event) {
+        const index = event.target.dataset.index;
+        listCart[index].quantity--;
+        if (listCart[index].quantity === 0) {
+            listCart.splice(index, 1);  // Remove the product from the list if quantity is 0
+        }
+        saveCart();
+        addCartToHTML();
+    }
+
+    function incrementQuantity(event) {
+        const index = event.target.dataset.index;
+        listCart[index].quantity++;
+        saveCart();
+        addCartToHTML();
+    }
+
+    function saveCart() {
+        const expires = "expires=Fri, 31 Dec 2027 23:59:59 UTC";
+        document.cookie = "listCart=" + JSON.stringify(listCart) + "; " + expires + "; path=/;";
+    }
+</script>
+</body>
+</html>

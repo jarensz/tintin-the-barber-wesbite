@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - TinTin The Barber</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/e4b7bd62c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+    <!--HEADER-->
+    <section class="header">
+        <div class="header-container">
+            <nav>
+                <a href="index.html"><img src="images/tintin_logo.png" alt="tintin-logo"></a>
+                <i class="fa-solid fa-bars" onclick="hideMenu()"></i>
+                <div class="right-links" id="right-linkss"> <!--for RIGHT-SIDE LINKS-->
+                    <i class="fa-solid fa-xmark " onclick="showMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!--PRODUCTS CONTENT-->
+    <section class="products-main">
+        <div class="container">
+            <div class="products-content">
+                <h1>OUR PRODUCTS</h1>
+                <p>The barbershop offers varied products ranging from tools to hair products.
+                Tools such as cutting scissors for trimming, thinner scissors for some hairstyles,
+                and a razor for fast trimming and shaving. For hair products, they offer items
+                such as pomade and hair wax for styling and keeping the shape of your hair depending 
+                on your preferences</p>
+            </div>
+            <div class="products-container">
+                <div class="prdsection-header">
+                    <div class="cart-icon"><img src="images/shopping-cart.png" alt=""></div>
+                    <div class="total-quantity">0</div>
+                </div>
+                <div class="prdsection-title">
+                    <select name="tabSelect" id="tabSelect" onchange="selectTab(this.value)">
+                        <option value="tools">Tools</option>
+                        <option value="hair-products">Hair Products</option>
+                    </select>
+                </div>
+                <div class="product-row active-tab tab-contents" id="tools"></div>
+                <div class="product-row tab-contents" id="hair-products"></div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--ADD TO CART-->
+    <section class="cart">
+        <div class="cart-container">
+            <h2>CART</h2>
+            <div class="cart-list">
+                <!-- Cart items will be appended here by JavaScript -->
+            </div>
+            <div class="cart-btn">
+                <div class="close">CLOSE</div>
+                <div class="checkout">
+                    <a href="checkout.html">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-maysan">
+                    <h4>Maysan</h4>
+                    <h4 class="footer-mever">Ever</h4>
+                </div>
+                <div class="footer-info">
+                    <h5>Maysan, Valenzuela</h5>
+                    <h5>0943-943-8590 </h5>
+                    <h5>Open everyday @ 9AM - 9PM</h5>
+                </div>
+            </div>
+            <div class="map">
+                <p>WANT A <strong>SHARP CUT?</strong> VISIT US<span> AND GET YOURS</span> </p>
+                <div class="map-Img">
+                    <iframe width="300" height="100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" 
+                    src="https://maps.google.com/maps?width=523&amp;height=403&amp;hl=en&amp;q=Maysan,%20Valenzuela%20Ilford+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    </iframe><a href='https://google-map-generator.com/'></a>
+                </div>
+                <a href="privacypolicy.html">Privacy Policy</a> | <a href="terms.html">Terms and Condition</a> 
+            </div>
+        </div>
+    </section>
+
+    <!--SUB-FOOTER-->
+    <section class="sub-footer">
+        <div class="subfooter-container">
+            <div class="sub-footer-info">
+                <h5>Copyright © 2024 TinTin The Barber | WEB DEVELOPMENT BY CARILLO, GENOGUIN, SACDALAN</h5>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("right-linkss");
+
+        function selectTab(tabname) {
+    var tabcontents = document.querySelectorAll('.tab-contents');
+
+    tabcontents.forEach(tabcontent => {
+        if (tabcontent.id === tabname) {
+            tabcontent.classList.add('active-tab');
+        } else {
+            tabcontent.classList.remove('active-tab');
+        }
+    });
+}
+
+
+
+        function showMenu(){
+            navLinks.style.right = "-200px";
+        }
+        function hideMenu(){
+            navLinks.style.right = "0";
+        }
+
+        
+
+        let cartIcon = document.querySelector('.cart-icon');
+        let cartContainer = document.querySelector('.cart-container');
+        let prdContainer = document.querySelector('.products-main');
+        let closeCart = document.querySelector('.close');
+
+        cartIcon.addEventListener('click', () => {
+            if (cartContainer.style.right === '-100%') {
+                cartContainer.style.right = '0';
+                prdContainer.style.transform = 'translateX(-500px)';
+            } else {
+                cartContainer.style.right = '-100%';
+                prdContainer.style.transform = 'translateX(0)';
+            }
+        });
+
+        closeCart.addEventListener('click', () => {
+            cartContainer.style.right = '-100%';
+            prdContainer.style.transform = 'translateX(0)';
+        });
+
+        let products = null;
+        fetch('product.json')
+            .then(response => response.json())
+            .then(data => {
+                products = data;
+                addDataToHTML();
+            });
+        
+            function addDataToHTML() {
+            let prdRows = document.querySelectorAll('.product-row');
+
+            if (products !== null) {
+                for (let i = 0; i < products.length; i++) {
+                    let product = products[i];
+                    let rowIndex = Math.floor(i / 3); // Calculate row index
+                    
+                    if(rowIndex === 0){
+                        let prdRow = Array.from(prdRows).find(row => row.classList.contains('active-tab'));
+                        if (prdRow) {
+                            let newProduct = createProductElement(product);
+                            prdRow.appendChild(newProduct);
+                        }
+                    } else if(rowIndex === 1){
+                        let prdRow = Array.from(prdRows).find(row => !row.classList.contains('active-tab'));
+                        if (prdRow) {
+                            let newProduct = createProductElement(product);
+                            prdRow.appendChild(newProduct);
+                        }
+                    }
+                }
+            }
+        }
+
+function createProductElement(product) {
+    let newProduct = document.createElement('div');
+    newProduct.classList.add('product-col');
+    newProduct.innerHTML =
+        `<img src="${product.prdImage}" alt="">
+        <div class="layer">
+            <h3>${product.prdName}</h3><br>
+            <p>${product.prdDesc}</p>
+            <h6><strong>PRICE:</strong> ₱${product.prdPrice.toFixed(2)}</h6>
+            <button type="button" onclick="addToCart(${product.prdID})">ADD TO CART</button>
+        </div>`;
+    return newProduct;
+}
+
+        let listCart = [];
+
+        function checkCart() {
+            let cookieValue = document.cookie
+                .split('; ')
+                .find(row => row.startsWith('listCart='));
+        
+            if (cookieValue) {
+                listCart = JSON.parse(cookieValue.split('=')[1]);
+            }
+        }
+
+        checkCart();
+
+        function addToCart(prdID) {
+            if (!listCart[prdID]) {
+                let dataProduct = products.filter(
+                    product => product.prdID === prdID
+                )[0];
+            
+                listCart[prdID] = dataProduct;
+                listCart[prdID].quantity = 1;
+            } else {
+                listCart[prdID].quantity++;
+            }
+        
+            let save = "expires=Fri, 31 Dec 2027 23:59:59 UTC";
+            document.cookie = "listCart=" + JSON.stringify(listCart) + "; " + save + "; path=/;";
+            addToCartToHTML();
+        }
+
+        function addToCartToHTML() {
+            let cartListHTML = document.querySelector('.cart-list');
+            cartListHTML.innerHTML = '';
+        
+            let prdQuantity = document.querySelector('.total-quantity');
+            let newQuantity = 0;
+        
+            if (listCart) {
+                listCart.forEach(product => {
+                    if (product) {
+                        let newCart = document.createElement('div');
+                        newCart.classList.add('items');
+                        newCart.innerHTML =
+                            `<img src="${product.prdImage}" alt="">
+                            <div class="contents">
+                                <div class="prd-name">
+                                    ${product.prdName}
+                                </div>
+                                <div class="prd-price">
+                                    ₱${product.prdPrice.toFixed(2)}
+                                </div>
+                            </div>
+                            <div class="prd-quantity">
+                                <button onclick="changeQuantity(${product.prdID}, 'decrease')">-</button>
+                                <span class="val">${product.quantity}</span>
+                                <button onclick="changeQuantity(${product.prdID}, 'increase')">+</button>
+                            </div>`;
+                        cartListHTML.appendChild(newCart);
+                        newQuantity += product.quantity;
+                    }
+                });
+            }
+            prdQuantity.innerHTML = newQuantity;
+        }
+
+        function changeQuantity(prdID, action) {
+            if (action === 'increase') {
+                listCart[prdID].quantity++;
+            } else if (action === 'decrease') {
+                listCart[prdID].quantity--;
+                if (listCart[prdID].quantity === 0) {
+                    delete listCart[prdID];  // Remove the product from the list if quantity is 0
+                }
+            }
+        
+            saveCart();
+            addToCartToHTML();
+        }
+
+        function saveCart() {
+            const expires = "expires=Fri, 31 Dec 2027 23:59:59 UTC";
+            document.cookie = "listCart=" + JSON.stringify(listCart) + "; " + expires + "; path=/;";
+        }
+
+        // Function to clear the cart for debugging or reset
+        function clearCart() {
+            listCart = [];
+            saveCart();
+            addToCartToHTML();
+            console.log('Cart cleared');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            addToCartToHTML();
+        });
+    </script>
+</body>
+</html>
